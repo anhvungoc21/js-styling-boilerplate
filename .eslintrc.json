@@ -23,7 +23,13 @@
 	"rules": {
 		"prefer-const": "off",
 		"no-autofix/prefer-const": "warn",
-		"no-unused-vars": "warn",
+		"no-unused-vars": [
+			"warn",
+			{ 
+				"argsIgnorePattern": "^_",
+				"caughtErrorsIgnorePattern": "^_"
+			}
+		],
 		"func-names": "off",
 		"import/no-extraneous-dependencies": "off"
 		// "prettier/prettier": "warn"
